@@ -16,6 +16,9 @@ body {
 h1 {
     margin: unset;
 }
+a {
+    text-decoration: none;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -26,6 +29,7 @@ header {
 .button {
     border-radius: 40px;
     color: white;
+    cursor: pointer;
     padding: 25px;
     background: linear-gradient(var(--secondary), var(--primary))
 }

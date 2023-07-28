@@ -14,11 +14,52 @@ header {
 #hero {
     text-align: center;
     font-size: 16pt;
+    padding: 70px 0;
     background-color: var(--light-gray);
 }
-#hero div {
-    padding: 50px;
+#hero a {
+    display: inline-block;
+    margin-top: 25px;
 }
-h1 {
-    font-weight: bold;
+#tutorial > div {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px 0 50px;
+}
+#tutorial div {
+    display: flex;
+    gap: 25px;
+}
+.tutorial-step {
+    padding: 25px 0;
+    border-radius: 25px;
+    align-items: center;
+    width: 100%;
+    background-color: var(--light-gray);
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
+}
+.tutorial-step::before {
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -13px;
+    width: 26px;
+    height: 26px;
+    content: "1";
+    color: white;
+    background-color: var(--primary);
+}
+.tutorial-step:nth-child(2)::before {
+    content: "2";
+}
+.tutorial-step:nth-child(3)::before {
+    content: "3";
+}
+.tutorial-step i {
+    margin-left: 50px;
+}
+.tutorial-step:hover i {
+    color: var(--primary);
 }
