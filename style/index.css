@@ -21,10 +21,13 @@ header {
     display: inline-block;
     margin-top: 25px;
 }
+#tutorial {
+    padding: 30px 25px;
+}
 #tutorial > div {
     flex-direction: column;
     align-items: center;
-    padding: 0 25px 0 50px;
+    padding-left: 25px;
 }
 #tutorial div {
     display: flex;
@@ -62,4 +65,7 @@ header {
 }
 .tutorial-step:hover i {
     color: var(--primary);
+}
+#restaurants {
+    background-color: var(--light-gray)
 }

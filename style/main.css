@@ -4,6 +4,7 @@
     --primary: #9356DC;
     --secondary: #FF79DA;
     --tertiary: #99E2D0;
+    --dark-gray: #353535;
     --gray: #eaeaea;
     --light-gray: #f6f6f6;
 }
@@ -31,5 +32,29 @@ header {
     color: white;
     cursor: pointer;
     padding: 25px;
-    background: linear-gradient(var(--secondary), var(--primary))
+    background: linear-gradient(var(--secondary), var(--primary));
+}
+/* Heart button, should probably be replaced with some JS */
+.heart .fa-heart {
+    line-height: unset;
+    background-clip: text;
+}
+.heart .fa-solid, .heart input {
+    display: none;
+}
+.heart input:checked + label .fa-solid, .heart label:hover{
+    display: inline-block;
+    background: linear-gradient(var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heart input:checked + label .fa-regular{
+    display: none;
+}
+footer {
+    background-color: var(--dark-gray);
+}
+footer > img {
+    filter: invert(1);
+    width: 25%;
 }
