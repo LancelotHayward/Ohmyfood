@@ -67,5 +67,61 @@ header {
     color: var(--primary);
 }
 #restaurants {
-    background-color: var(--light-gray)
+    background-color: var(--light-gray);
+    padding-bottom: 50px;
+}
+#restaurants h2 {
+    margin-left: 5%;
+    padding-top: 30px; /* Is the same as #tutorial padding-bottom */
+}
+#restaurants > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.restaurant {
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.restaurant div {
+    max-height: 200px;
+    overflow: hidden;
+}
+.restaurant img {
+    width:100%;
+    /* height:100%;
+    object-fit: cover;
+    object-position: bottom; */
+}
+.restaurant div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.heart {
+    padding-right: 15px;
+}
+.restaurant p {
+    margin: 0;
+}
+.restaurant p:nth-child(1){
+    font-weight: bold;
+}
+.new {
+    position: relative;
+}
+.new::before {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--tertiary-dark);
+    content: "Nouveau"; /* Should avoid language in css, to facilitate page translation */
+    background-color: var(--tertiary);
 }
