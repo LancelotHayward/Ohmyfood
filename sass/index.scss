@@ -16,10 +16,6 @@ header {
     font-size: 16pt;
     padding: 70px 35px;
     background-color: var(--light-gray);
-    a {
-        display: inline-block;
-        margin-top: 25px;
-    }
 }
 #tutorial {
     padding: 30px 25px;
@@ -120,7 +116,7 @@ header {
         padding: 10px 15px;
         border-radius: 5px;
         font-weight: bold;
-        // color: darken(var(--tertiary),0.1);
+        color: darken(var(--tertiary),0.1);
         content: "Nouveau"; /* Should avoid language in css, to facilitate page translation */
         background-color: var(--tertiary);
     }

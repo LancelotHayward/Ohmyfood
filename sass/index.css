@@ -19,10 +19,6 @@ header {
   padding: 70px 35px;
   background-color: var(--light-gray);
 }
-#hero a {
-  display: inline-block;
-  margin-top: 25px;
-}
 
 #tutorial {
   padding: 30px 25px;
