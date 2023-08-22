@@ -15,12 +15,17 @@ main {
 }
 
 section {
-  margin-bottom: 20px;
+  margin-top: 40px;
+}
+section:not(#order) {
+  display: flex;
+}
+section:not(#title) {
+  flex-direction: column;
+  gap: 20px;
 }
 
 #title {
-  margin-top: 20px;
-  display: flex;
   align-items: center;
 }
 #title .heart {
@@ -29,21 +34,24 @@ section {
 
 h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: xx-large;
+  font-size: 30pt;
   margin-right: auto;
 }
 
 h2 {
+  margin: unset;
   font-weight: 300;
   display: inline-block;
   justify-content: space-between;
 }
 h2 span {
   border-bottom: 3px solid var(--tertiary);
+  padding-bottom: 5px;
 }
 
 .menu-item {
   background-color: white;
+  padding: 10px;
 }
 .menu-item p {
   display: inline-block;

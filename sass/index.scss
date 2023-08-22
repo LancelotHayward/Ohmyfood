@@ -1,5 +1,7 @@
+@import 'mixins/drop-shadow';
 header {
-    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
+    @include drop-shadow(3px, 3px);
+    // filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
 }
 #address {
     display: flex;
@@ -16,6 +18,9 @@ header {
     font-size: 16pt;
     padding: 70px 35px;
     background-color: var(--light-gray);
+    .button {
+        margin-top: 20px;
+    }
 }
 #tutorial {
     padding: 30px 25px;
@@ -36,7 +41,8 @@ header {
     align-items: center;
     width: 100%;
     background-color: var(--light-gray);
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
+    @include drop-shadow;
+    // filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
     i {
         margin-left: 50px;
     }
@@ -116,7 +122,7 @@ header {
         padding: 10px 15px;
         border-radius: 5px;
         font-weight: bold;
-        color: darken(var(--tertiary),0.1);
+        // color: darken(var(--tertiary),0.1);
         content: "Nouveau"; /* Should avoid language in css, to facilitate page translation */
         background-color: var(--tertiary);
     }

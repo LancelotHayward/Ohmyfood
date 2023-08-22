@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap');
+@import 'mixins/drop-shadow';
 :root {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -24,9 +25,12 @@ header {
     align-items: center;
     padding: 25px;
     background-color: white;
+    img {
+        width: 50vw;
+    }
 }
 .button {
-    margin-top: 20px;
+    @include drop-shadow;
     border-radius: 40px;
     display: inline-block;
     font-weight: bold;
