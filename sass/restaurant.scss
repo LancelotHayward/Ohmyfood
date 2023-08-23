@@ -1,3 +1,4 @@
+@import 'mixins/drop-shadow';
 body > img {
     position: relative;
     z-index: -1;
@@ -10,6 +11,13 @@ main {
     overflow: auto;
     padding: 0 20px;
     background-color: var(--light-gray);
+}
+#order {
+    margin-bottom: 40px;
+    text-align: center;
+    .button {
+        width: 40vw;
+    }
 }
 section {
     margin-top: 40px;
@@ -43,13 +51,23 @@ h2 {
     }
 }
 .menu-item {
+    @include drop-shadow;
     background-color: white;
-    padding: 10px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 16pt;
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+    h3, p {
+        margin: unset;
+    }
     p {
-        display: inline-block;
         font-weight: 300;
     }
     data {
         font-weight: bold;
+        margin-right: 10px;
     }
 }
