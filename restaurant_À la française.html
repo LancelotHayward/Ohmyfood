@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>À la française (Ohmyfood)</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='sass/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='sass/restaurant.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-2xl fa-arrow-left"></i>
+        <img alt="Ohmyfood logo" src="images/logo/ohmyfood.png">
+        <div class="hidden"><!-- Flex alignement div--></div>
+    </header>
+    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat de nourriture">
+    <main>
+        <section id="title">
+            <h1>À la française</h1>
+            <div class="heart"> <!-- Heart button, should probably be replaced with some JS -->
+                <input id="heart" type="checkbox">
+                <label for="heart">
+                    <i class="fa-regular fa-xl fa-heart"></i>
+                    <i class="fa-solid fa-xl fa-heart"></i>
+                </label>
+            </div>
+        </section>
+        <section id="entrées">
+            <h2><span>ENTR</span>ÉES</h2>
+            <article class="menu-item">
+                <h3>Tartare de poulpe acidulé</h3>
+                <div>
+                    <p>Aux zestes d'orange</p>
+                    <data class="price" value="25">25€</data>
+                </div>
+            </article>
+            <article class="menu-item">
+                <h3>Velouté de légumes d'antan</h3>
+                <div>
+                    <p>Carotte, panais, topinambour</p>
+                    <data class="price" value="35">35€</data>
+                </div>
+            </article>
+            <article class="menu-item">
+                <h3>Soupe à l'oignon</h3>
+                <div>
+                    <p>Revisitée</p>
+                    <data class="price" value="20">20€</data>
+                </div>
+            </article>
+        </section>
+        <section id="plats">
+            <h2><span>Plat</span>s</h2>
+            <article class="menu-item">
+                <h3>Coquilles Saint-Jacques</h3>
+                <div>
+                    <p>Accompagnées d'une purée de panais</p>
+                    <data class="price" value="40">40€</data>
+                </div>
+            </article>
+            <article class="menu-item">
+                <h3>Magret de canard</h3>
+                <div>
+                    <p>Et parmentier de pommes de terre</p>
+                    <data class="price" value="35">35€</data>
+                </div>
+            </article>
+            <article class="menu-item">
+                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                <div>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                    <data class="price" value="44">44€</data>
+                </div>
+            </article>
+        </section>
+        <section id="plats">
+            <h2><span>Dess</span>erts</h2>
+            <article class="menu-item">
+                <h3>Pétales de violettes glacés</h3>
+                <div>
+                    <p>Et purée de noisettes</p>
+                    <data class="price" value="18">18€</data>
+                </div>
+            </article>
+            <article class="menu-item">
+                <h3>Fondant au chocolat</h3>
+                <div>
+                    <p>Revisité</p>
+                    <data class="price" value="22">22€</data>
+                </div>
+            </article>
+            <article class="menu-item">
+                <h3>Millefeuille croustillant</h3>
+                <div>
+                    <p>Myrtilles et pâte d’amande</p>
+                    <data class="price" value="23">23€</data>
+                </div>
+            </article>
+        </section>
+        <section id="order">
+            <a class="button" href="#">Commander</a>
+        </section>
+    </main>
+    <footer>
+        <img src="images/logo/ohmyfood.png" alt="Ohmyfood logo">
+        <nav>
+            <span><i class="fa-solid fa-xs fa-utensils" id="footer-utensils"></i>
+            <a href="#" id="footer-suggest">Proposer un restaurant</a></span>
+            <span><i class="fa-solid fa-xs fa-handshake" id="footer-handshake"></i>
+            <a href="#" id="footer-partner">Devenir partenaire</a></span>
+            <a href="#" id="footer-legal">Mentions légales</a>
+            <a href="#" id="footer-contact">Contact</a>
+        </nav>
+    </footer>
+</body>
+</html>

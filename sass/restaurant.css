@@ -70,9 +70,11 @@ h2 span {
 }
 .menu-item h3, .menu-item p {
   margin: unset;
+  font-size: 17pt;
 }
 .menu-item p {
   font-weight: 300;
+  font-size: 15pt;
 }
 .menu-item data {
   font-weight: bold;
