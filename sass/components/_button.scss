@@ -1,0 +1,10 @@
+.button {
+    @include drop-shadow;
+    border-radius: 40px;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    background: linear-gradient(var(--secondary), var(--primary));
+}

@@ -1,0 +1,59 @@
+@use '../abstracts/colors';
+@import '../utils/drop-shadow';
+@import '../utils/hidden';
+@import '../utils/fade-in';
+.menu-item {
+    @extend .faded-in;
+    @include drop-shadow;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 16pt;
+    overflow: hidden;
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+    h3 {
+        margin: unset;
+        font-size: 17pt;
+    }
+    p {
+        @extend h3;
+        font-weight: 300;
+        font-size: 15pt;
+    }
+    data {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .fa-circle-check {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 45px 25px;
+        color: white;
+        background-color: colors.$tertiary;
+    }
+    &:not(&:hover) {
+        .fa-circle-check {
+            @extend .hidden;
+            transform:translateX(60px)
+        }
+    }
+    &:hover {
+        .fa-circle-check, data {
+            transition: all 400ms;
+            transform:translateX(0);
+        }
+        data {
+            transform:translateX(-65px);
+        }
+        h3, p {
+            max-width: 60%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

@@ -10,14 +10,14 @@ header {
   font-size: 16pt;
   font-weight: bold;
   padding: 25px 0;
-  background-color: var(--gray);
+  background-color: #eaeaea;
 }
 
 #hero {
   text-align: center;
   font-size: 16pt;
   padding: 70px 35px;
-  background-color: var(--light-gray);
+  background-color: #f6f6f6;
 }
 #hero .button {
   margin-top: 20px;
@@ -42,14 +42,14 @@ header {
   font-weight: bold;
   align-items: center;
   width: 100%;
-  background-color: var(--light-gray);
+  background-color: #f6f6f6;
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
 }
 .tutorial-step i {
   margin-left: 50px;
 }
 .tutorial-step:hover i {
-  color: var(--primary);
+  color: #9356DC;
 }
 .tutorial-step::before {
   border-radius: 60px;
@@ -61,7 +61,7 @@ header {
   width: 26px;
   height: 26px;
   color: white;
-  background-color: var(--primary);
+  background-color: #9356DC;
 }
 .tutorial-step:nth-child(1)::before {
   content: "1";
@@ -74,7 +74,7 @@ header {
 }
 
 #restaurants {
-  background-color: var(--light-gray);
+  background-color: #f6f6f6;
   padding-bottom: 50px;
 }
 #restaurants h2 {
@@ -133,5 +133,5 @@ header {
   border-radius: 5px;
   font-weight: bold;
   content: "Nouveau"; /* Should avoid language in css, to facilitate page translation */
-  background-color: var(--tertiary);
+  background-color: #99E2D0;
 }/*# sourceMappingURL=index.css.map */

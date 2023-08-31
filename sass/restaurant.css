@@ -1,3 +1,124 @@
+.hidden, .menu-item:not(.menu-item:hover) .fa-circle-check {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.faded-in:nth-child(1), .menu-item:nth-child(1) {
+  animation: fade-in ease-in 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(2), .menu-item:nth-child(2) {
+  animation: fade-in ease-in 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(3), .menu-item:nth-child(3) {
+  animation: fade-in ease-in 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(4), .menu-item:nth-child(4) {
+  animation: fade-in ease-in 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(5), .menu-item:nth-child(5) {
+  animation: fade-in ease-in 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(6), .menu-item:nth-child(6) {
+  animation: fade-in ease-in 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(7), .menu-item:nth-child(7) {
+  animation: fade-in ease-in 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(8), .menu-item:nth-child(8) {
+  animation: fade-in ease-in 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(9), .menu-item:nth-child(9) {
+  animation: fade-in ease-in 9s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(10), .menu-item:nth-child(10) {
+  animation: fade-in ease-in 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.menu-item {
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 16pt;
+  overflow: hidden;
+}
+.menu-item div {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item h3, .menu-item p {
+  margin: unset;
+  font-size: 17pt;
+}
+.menu-item p {
+  font-weight: 300;
+  font-size: 15pt;
+}
+.menu-item data {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.menu-item .fa-circle-check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 45px 25px;
+  color: white;
+  background-color: #99E2D0;
+}
+.menu-item:not(.menu-item:hover) .fa-circle-check {
+  transform: translateX(60px);
+}
+.menu-item:hover .fa-circle-check, .menu-item:hover data {
+  transition: all 400ms;
+  transform: translateX(0);
+}
+.menu-item:hover data {
+  transform: translateX(-65px);
+}
+.menu-item:hover h3, .menu-item:hover p {
+  max-width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 body > img {
   position: relative;
   z-index: -1;
@@ -55,28 +176,4 @@ h2 {
 h2 span {
   border-bottom: 3px solid var(--tertiary);
   padding-bottom: 5px;
-}
-
-.menu-item {
-  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
-  background-color: white;
-  padding: 15px 20px;
-  border-radius: 20px;
-  font-size: 16pt;
-}
-.menu-item div {
-  display: flex;
-  justify-content: space-between;
-}
-.menu-item h3, .menu-item p {
-  margin: unset;
-  font-size: 17pt;
-}
-.menu-item p {
-  font-weight: 300;
-  font-size: 15pt;
-}
-.menu-item data {
-  font-weight: bold;
-  margin-right: 10px;
 }/*# sourceMappingURL=restaurant.css.map */

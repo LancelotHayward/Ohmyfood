@@ -1,0 +1,18 @@
+.heart {
+    .fa-heart {
+        line-height: unset;
+        background-clip: text;
+    }
+    .fa-solid, input {
+        display: none;
+    }
+    input:checked + label .fa-solid, label:hover {
+        display: inline-block;
+        background: linear-gradient(var(--primary), var(--secondary));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    input:checked + label .fa-regular{
+        display: none;
+    }
+}

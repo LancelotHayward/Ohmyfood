@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap');
-@import 'mixins/drop-shadow';
-:root {
+@import 'utils/drop-shadow';
+:root { //abstracts
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     --primary: #9356DC;
@@ -10,7 +10,7 @@
     --gray: #eaeaea;
     --light-gray: #f6f6f6;
 }
-.hidden {
+.hidden { //utils
     visibility: hidden;
 }
 body, h1 {
@@ -19,7 +19,7 @@ body, h1 {
 a {
     text-decoration: none;
 }
-header {
+header { //layout
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@ header {
         width: 50vw;
     }
 }
-.button {
+.button { //components
     @include drop-shadow;
     border-radius: 40px;
     display: inline-block;
@@ -39,7 +39,7 @@ header {
     padding: 20px;
     background: linear-gradient(var(--secondary), var(--primary));
 }
-.heart {
+.heart { //components
     .fa-heart {
         line-height: unset;
         background-clip: text;
@@ -57,7 +57,7 @@ header {
         display: none;
     }
 }
-footer {
+footer { //layout
     background-color: var(--dark-gray);
     padding: 20px;
     > img {

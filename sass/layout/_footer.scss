@@ -1,0 +1,28 @@
+footer {
+    background-color: var(--dark-gray);
+    padding: 20px;
+    > img {
+        filter: invert(1);
+        width: 25%;
+        margin-bottom: 15px;
+    }
+    nav {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-weight: 400;
+        span {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: inherit;
+            i {
+                width: 15px;
+            }
+        }
+    }
+    a {
+        color: white;
+    }
+}
