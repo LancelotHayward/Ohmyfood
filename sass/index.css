@@ -1,3 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap");
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+body, h1 {
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: white;
+}
+header img {
+  width: 50vw;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+}
+footer > img {
+  filter: invert(1);
+  width: 25%;
+  margin-bottom: 15px;
+}
+footer nav {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 400;
+}
+footer nav span {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: inherit;
+}
+footer nav span i {
+  width: 15px;
+}
+footer a {
+  color: white;
+}
+
+.button {
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+  border-radius: 40px;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.heart .fa-heart {
+  line-height: unset;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.heart .fa-solid, .heart input {
+  display: none;
+}
+.heart input:checked + label .fa-solid, .heart label:hover {
+  display: inline-block;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart input:checked + label .fa-regular {
+  display: none;
+}
+
 header {
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
 }

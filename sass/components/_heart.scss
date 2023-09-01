@@ -1,3 +1,4 @@
+@use '../abstracts/colors';
 .heart {
     .fa-heart {
         line-height: unset;
@@ -8,7 +9,7 @@
     }
     input:checked + label .fa-solid, label:hover {
         display: inline-block;
-        background: linear-gradient(var(--primary), var(--secondary));
+        background: linear-gradient(colors.$primary, colors.$secondary);
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }

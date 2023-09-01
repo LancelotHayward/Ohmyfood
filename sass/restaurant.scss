@@ -1,3 +1,10 @@
+@use 'abstracts/colors';
+@use 'abstracts/fonts';
+@use 'abstracts/reset';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'components/button';
+@use 'components/heart';
 @use 'components/menu-item';
 @import 'utils/drop-shadow';
 body > img {
@@ -50,28 +57,4 @@ h2 {
         border-bottom: 3px solid var(--tertiary);
         padding-bottom: 5px;
     }
-}
-.menu-item { //components
-    // @include drop-shadow;
-    // background-color: white;
-    // padding: 15px 20px;
-    // border-radius: 20px;
-    // font-size: 16pt;
-    // div {
-    //     display: flex;
-    //     justify-content: space-between;
-    // }
-    // h3 {
-    //     margin: unset;
-    //     font-size: 17pt;
-    // }
-    // p {
-    //     @extend h3;
-    //     font-weight: 300;
-    //     font-size: 15pt;
-    // }
-    // data {
-    //     font-weight: bold;
-    //     margin-right: 10px;
-    // }
 }

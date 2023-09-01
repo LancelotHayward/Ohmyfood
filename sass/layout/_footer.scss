@@ -1,5 +1,6 @@
+@use '../abstracts/colors';
 footer {
-    background-color: var(--dark-gray);
+    background-color: colors.$dark-gray;
     padding: 20px;
     > img {
         filter: invert(1);
