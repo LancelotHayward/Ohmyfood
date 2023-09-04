@@ -5,10 +5,14 @@
 @use 'layout/footer';
 @use 'components/button';
 @use 'components/heart';
+@import 'utils/breakpoints';
 @import 'utils/drop-shadow';
 header {
     @include drop-shadow(3px, 3px);
     // filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
+    @include desktop-breakpoint {
+        background-color: red;
+    }
 }
 #address {
     display: flex;
@@ -129,7 +133,7 @@ header {
         padding: 10px 15px;
         border-radius: 5px;
         font-weight: bold;
-        // color: darken(var(--tertiary),0.1);
+        color: darken(colors.$tertiary,50%);
         content: "Nouveau"; /* Should avoid language in css, to facilitate page translation */
         background-color: colors.$tertiary;
     }

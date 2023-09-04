@@ -1,19 +1,22 @@
 @use '../abstracts/colors';
+@import '../utils/fade-in';
 .heart {
     .fa-heart {
         line-height: unset;
         background-clip: text;
+        transition: all 400ms;
     }
-    .fa-solid, input {
+    .fa-solid {
         display: none;
     }
     input:checked + label .fa-solid, label:hover {
+        animation: fade-in 400ms;
         display: inline-block;
         background: linear-gradient(colors.$primary, colors.$secondary);
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    input:checked + label .fa-regular{
+    input:checked + label .fa-regular, input{
         display: none;
     }
 }

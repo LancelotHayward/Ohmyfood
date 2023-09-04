@@ -9,4 +9,9 @@
     cursor: pointer;
     padding: 20px;
     background: linear-gradient(colors.$secondary, colors.$primary);
+    transition: all 400ms;
+    &:hover {
+        background: linear-gradient(lighten(colors.$secondary,10%), lighten(colors.$primary,10%));
+        @include drop-shadow(15px, 10px, 0.3);
+    }
 }

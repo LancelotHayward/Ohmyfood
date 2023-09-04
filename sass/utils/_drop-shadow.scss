@@ -1,3 +1,3 @@
-@mixin drop-shadow($blur-radius: 10px, $vertical-offset: 10px) {
-    filter: drop-shadow(0px $vertical-offset $blur-radius rgba(0, 0, 0, 0.2));
+@mixin drop-shadow($blur-radius: 10px, $vertical-offset: 10px, $darkness: 0.2) {
+    filter: drop-shadow(0px $vertical-offset $blur-radius rgba(0, 0, 0, $darkness));
 }
