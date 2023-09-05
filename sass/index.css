@@ -12,6 +12,164 @@ a {
   text-decoration: none;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.faded-in:nth-child(1), #loader .fa-solid:nth-child(1) {
+  animation: fade-in ease-in 0.15s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(2), #loader .fa-solid:nth-child(2) {
+  animation: fade-in ease-in 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(3), #loader .fa-solid:nth-child(3) {
+  animation: fade-in ease-in 0.45s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(4), #loader .fa-solid:nth-child(4) {
+  animation: fade-in ease-in 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(5), #loader .fa-solid:nth-child(5) {
+  animation: fade-in ease-in 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(6), #loader .fa-solid:nth-child(6) {
+  animation: fade-in ease-in 0.9s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(7), #loader .fa-solid:nth-child(7) {
+  animation: fade-in ease-in 1.05s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(8), #loader .fa-solid:nth-child(8) {
+  animation: fade-in ease-in 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(9), #loader .fa-solid:nth-child(9) {
+  animation: fade-in ease-in 1.35s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(10), #loader .fa-solid:nth-child(10) {
+  animation: fade-in ease-in 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(11), #loader .fa-solid:nth-child(11) {
+  animation: fade-in ease-in 1.65s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(12), #loader .fa-solid:nth-child(12) {
+  animation: fade-in ease-in 1.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(13), #loader .fa-solid:nth-child(13) {
+  animation: fade-in ease-in 1.95s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(14), #loader .fa-solid:nth-child(14) {
+  animation: fade-in ease-in 2.1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(15), #loader .fa-solid:nth-child(15) {
+  animation: fade-in ease-in 2.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(16), #loader .fa-solid:nth-child(16) {
+  animation: fade-in ease-in 2.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(17), #loader .fa-solid:nth-child(17) {
+  animation: fade-in ease-in 2.55s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(18), #loader .fa-solid:nth-child(18) {
+  animation: fade-in ease-in 2.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(19), #loader .fa-solid:nth-child(19) {
+  animation: fade-in ease-in 2.85s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(20), #loader .fa-solid:nth-child(20) {
+  animation: fade-in ease-in 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes remove-loader {
+  99% {
+    z-index: 9;
+    visibility: visible;
+  }
+  100% {
+    z-index: -9;
+    visibility: hidden;
+  }
+}
+#loader {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  animation: remove-loader 3s both;
+}
+#loader div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .hidden {
   visibility: hidden;
 }
@@ -81,61 +239,121 @@ footer a {
   }
 }
 .faded-in:nth-child(1) {
-  animation: fade-in ease-in 1s;
+  animation: fade-in ease-in 0.15s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(2) {
-  animation: fade-in ease-in 2s;
+  animation: fade-in ease-in 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(3) {
-  animation: fade-in ease-in 3s;
+  animation: fade-in ease-in 0.45s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(4) {
-  animation: fade-in ease-in 4s;
+  animation: fade-in ease-in 0.6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(5) {
-  animation: fade-in ease-in 5s;
+  animation: fade-in ease-in 0.75s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(6) {
-  animation: fade-in ease-in 6s;
+  animation: fade-in ease-in 0.9s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(7) {
-  animation: fade-in ease-in 7s;
+  animation: fade-in ease-in 1.05s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(8) {
-  animation: fade-in ease-in 8s;
+  animation: fade-in ease-in 1.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(9) {
-  animation: fade-in ease-in 9s;
+  animation: fade-in ease-in 1.35s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .faded-in:nth-child(10) {
-  animation: fade-in ease-in 10s;
+  animation: fade-in ease-in 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(11) {
+  animation: fade-in ease-in 1.65s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(12) {
+  animation: fade-in ease-in 1.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(13) {
+  animation: fade-in ease-in 1.95s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(14) {
+  animation: fade-in ease-in 2.1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(15) {
+  animation: fade-in ease-in 2.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(16) {
+  animation: fade-in ease-in 2.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(17) {
+  animation: fade-in ease-in 2.55s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(18) {
+  animation: fade-in ease-in 2.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(19) {
+  animation: fade-in ease-in 2.85s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(20) {
+  animation: fade-in ease-in 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

@@ -6,9 +6,9 @@
         opacity: 1;
      }
 }
-@for $i from 1 through 10 {
+@for $i from 1 through 20 {
     .faded-in:nth-child(#{$i}) {
-        animation: fade-in ease-in #{$i}s;
+        animation: fade-in ease-in #{$i/20*3}s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }

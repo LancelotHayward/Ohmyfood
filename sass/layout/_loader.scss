@@ -1,0 +1,35 @@
+@use "../abstracts/colors";
+@import "../utils/fade-in";
+@keyframes remove-loader{
+    99% {
+        z-index: 9;
+        visibility: visible;
+    }
+    100% {
+        z-index: -9;
+        visibility: hidden;
+    }
+}
+#loader {
+    background-color: colors.$gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    animation: remove-loader 3s both;
+    div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .fa-solid {
+        @extend .faded-in;
+    }
+}
