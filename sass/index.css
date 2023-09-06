@@ -140,6 +140,12 @@ a {
   animation-fill-mode: forwards;
 }
 
+.faded-in:nth-child(21), #loader .fa-solid:nth-child(21) {
+  animation: fade-in ease-in 3.15s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 @keyframes remove-loader {
   99% {
     z-index: 9;
@@ -170,6 +176,46 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+#loader .fa-solid {
+  display: inline-block;
+}
+#loader .fa-solid:nth-child(11) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(12) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(13) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(14) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(15) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(16) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(17) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(18) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(19) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(20) {
+  transform: translateY(50px);
+}
+#loader .fa-solid:nth-child(21) {
+  transform: translateY(50px);
+}
+#loader .new-liner {
+  flex-basis: 100%;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -182,7 +228,7 @@ header {
   background-color: white;
 }
 header img {
-  width: 50vw;
+  max-width: 50vw;
 }
 
 footer {
@@ -358,6 +404,12 @@ footer a {
   animation-fill-mode: forwards;
 }
 
+.faded-in:nth-child(21) {
+  animation: fade-in ease-in 3.15s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .heart .fa-heart {
   line-height: unset;
   -webkit-background-clip: text;
@@ -381,11 +433,6 @@ footer a {
 
 header {
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
-}
-@media only screen and (min-width: 1000px) {
-  header {
-    background-color: red;
-  }
 }
 
 #address {
@@ -420,6 +467,17 @@ header {
   flex-direction: column;
   align-items: center;
   padding-left: 25px;
+}
+@media only screen and (min-width: 1000px) {
+  #tutorial > div {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+  }
+  #tutorial .tutorial-step {
+    min-width: 315px;
+    width: 20vw;
+  }
 }
 
 .tutorial-step {
@@ -472,6 +530,17 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+@media only screen and (min-width: 1000px) {
+  #restaurants > div {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #restaurants .restaurant {
+    min-width: 40vw;
+    width: 40vw;
+  }
 }
 
 .restaurant {

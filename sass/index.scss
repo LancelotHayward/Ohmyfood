@@ -10,10 +10,6 @@
 @import 'utils/drop-shadow';
 header {
     @include drop-shadow(3px, 3px);
-    // filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
-    @include desktop-breakpoint {
-        background-color: red;
-    }
 }
 #address {
     display: flex;
@@ -40,10 +36,21 @@ header {
         display: flex;
         gap: 25px;
     }
-    > div {
+    & > div {
         flex-direction: column;
         align-items: center;
         padding-left: 25px;
+    }
+    @include desktop-breakpoint {
+        & > div {
+            flex-direction: row;
+            justify-content: center;
+            gap: 2vw;
+        }
+        .tutorial-step {
+            min-width: 315px;
+            width: 20vw;
+        }
     }
 }
 .tutorial-step {
@@ -86,11 +93,22 @@ header {
         margin-left: 5%;
         padding-top: 30px; /* Is the same as #tutorial padding-bottom */
     }
-    > div {
+    & > div {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+    @include desktop-breakpoint {
+        & > div {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .restaurant {
+            min-width: 40vw;
+            width: 40vw;
+        }
     }
 }
 .restaurant {

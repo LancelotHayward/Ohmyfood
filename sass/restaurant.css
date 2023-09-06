@@ -24,7 +24,7 @@ header {
   background-color: white;
 }
 header img {
-  width: 50vw;
+  max-width: 50vw;
 }
 
 footer {
@@ -200,6 +200,12 @@ footer a {
   animation-fill-mode: forwards;
 }
 
+.faded-in:nth-child(21) {
+  animation: fade-in ease-in 3.15s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .heart .fa-heart {
   line-height: unset;
   -webkit-background-clip: text;
@@ -349,6 +355,12 @@ footer a {
 
 .faded-in:nth-child(20), .menu-item:nth-child(20) {
   animation: fade-in ease-in 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.faded-in:nth-child(21), .menu-item:nth-child(21) {
+  animation: fade-in ease-in 3.15s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

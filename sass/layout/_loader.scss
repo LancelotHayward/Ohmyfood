@@ -30,6 +30,15 @@
         flex-wrap: wrap;
     }
     .fa-solid {
+        display: inline-block;
         @extend .faded-in;
+        @for $i from 11 to 22 {
+            &:nth-child(#{$i}) {
+                transform: translateY(50px);
+            }
+        }
+    }
+    .new-liner {
+        flex-basis: 100%;
     }
 }
