@@ -1,10 +1,11 @@
 @use '../abstracts/colors';
+@import '../utils/breakpoints';
 footer {
     background-color: colors.$dark-gray;
     padding: 20px;
-    > img {
+    & > img {
         filter: invert(1);
-        width: 25%;
+        max-width: 25%;
         margin-bottom: 15px;
     }
     nav {
@@ -25,5 +26,23 @@ footer {
     }
     a {
         color: white;
+    }
+    @include desktop-breakpoint {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 50px;
+        nav {
+            flex-direction: row;
+            padding-bottom: 10px;
+            & > *:nth-child(2) {
+                padding-right: 50px;
+            }
+        }
+        & > img {
+            max-width: 10%;
+            padding: 0 50px;
+            transform: translateY(5px);
+        }
     }
 }

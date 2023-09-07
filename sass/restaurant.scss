@@ -7,6 +7,7 @@
 @use 'components/heart';
 @use 'components/menu-item';
 @import 'utils/drop-shadow';
+@import 'utils/breakpoints';
 body > img {
     position: relative;
     z-index: -1;
@@ -19,6 +20,9 @@ main {
     overflow: auto;
     padding: 0 20px;
     background-color: var(--light-gray);
+    @include desktop-breakpoint {
+        margin: 0 #{(100vw - 960px)/4}
+    }
 }
 #order {
     margin-bottom: 40px;
