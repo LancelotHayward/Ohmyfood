@@ -489,6 +489,9 @@ header {
   padding-left: 25px;
 }
 @media only screen and (min-width: 1000px) {
+  #tutorial h2 {
+    margin-left: 5%;
+  }
   #tutorial > div {
     flex-direction: row;
     justify-content: center;
