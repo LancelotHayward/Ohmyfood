@@ -169,7 +169,7 @@ a {
   right: 0;
   bottom: 0;
   z-index: 9;
-  animation: remove-loader 3s both;
+  animation: remove-loader 0s both;
 }
 #loader div {
   display: flex;
@@ -246,15 +246,6 @@ footer nav {
   flex-direction: column;
   gap: 10px;
   font-weight: 400;
-}
-footer nav span {
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: inherit;
-}
-footer nav span i {
-  width: 15px;
 }
 footer a {
   color: white;
@@ -455,6 +446,10 @@ header {
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
 }
 
+main > * {
+  padding-left: 50px;
+}
+
 #address {
   display: flex;
   justify-content: center;
@@ -477,7 +472,8 @@ header {
 }
 
 #tutorial {
-  padding: 30px 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #tutorial div {
   display: flex;
@@ -489,12 +485,8 @@ header {
   padding-left: 25px;
 }
 @media only screen and (min-width: 1000px) {
-  #tutorial h2 {
-    margin-left: 5%;
-  }
   #tutorial > div {
     flex-direction: row;
-    justify-content: center;
     gap: 2vw;
   }
   #tutorial .tutorial-step {
@@ -545,7 +537,6 @@ header {
   padding-bottom: 50px;
 }
 #restaurants h2 {
-  margin-left: 5%;
   padding-top: 30px; /* Is the same as #tutorial padding-bottom */
 }
 #restaurants > div {

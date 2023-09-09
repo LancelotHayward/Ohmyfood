@@ -14,15 +14,6 @@ footer {
         flex-direction: column;
         gap: 10px;
         font-weight: 400;
-        span {
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: inherit;
-            i {
-                width: 15px;
-            }
-        }
     }
     a {
         color: white;

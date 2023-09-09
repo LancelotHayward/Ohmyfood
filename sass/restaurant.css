@@ -43,15 +43,6 @@ footer nav {
   gap: 10px;
   font-weight: 400;
 }
-footer nav span {
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: inherit;
-}
-footer nav span i {
-  width: 15px;
-}
 footer a {
   color: white;
 }
