@@ -31,6 +31,8 @@
     }
     .fa-solid {
         display: inline-block;
+        @include fade-in;
+        @include faded-in;
         @extend .faded-in;
         @for $i from 11 to 22 {
             &:nth-child(#{$i}) {

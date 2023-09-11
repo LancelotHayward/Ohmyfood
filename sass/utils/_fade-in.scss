@@ -1,15 +1,19 @@
-@keyframes fade-in{
-    0% {
-        opacity: 0;
+@mixin fade-in($start-opacity: 0, $end-opacity: 1) {
+    @keyframes fade-in{
+        0% {
+            opacity: $start-opacity;
+        }
+        100% {
+            opacity: $end-opacity;
+        }
     }
-    100% {
-        opacity: 1;
-     }
 }
-@for $i from 1 through 21 {
-    .faded-in:nth-child(#{$i}) {
-        animation: fade-in ease-in #{$i/20*3}s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+@mixin faded-in($amount: 20, $seconds: 3) {
+    @for $i from 1 through #{$amount + 1} {
+        .faded-in:nth-child(#{$i}) {
+            animation: fade-in ease-in #{$i/$amount*$seconds}s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
     }
 }
