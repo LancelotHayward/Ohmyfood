@@ -171,6 +171,14 @@ a {
 #loader .fa-solid {
   display: inline-block;
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #loader .fa-solid:nth-child(11) {
   transform: translateY(50px);
 }
