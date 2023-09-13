@@ -5,6 +5,9 @@
         line-height: unset;
         background-clip: text;
         transition: all 400ms;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .fa-solid {
         display: none;
