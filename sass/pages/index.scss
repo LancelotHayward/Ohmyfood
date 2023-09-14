@@ -1,13 +1,13 @@
-@use 'abstracts/colors';
-@use 'abstracts/fonts';
-@use 'abstracts/reset';
-@use 'layout/loader';
-@use 'layout/header';
-@use 'layout/footer';
-@use 'components/button';
-@use 'components/heart';
-@import 'utils/breakpoints';
-@import 'utils/drop-shadow';
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+@use '../abstracts/reset';
+@use '../layout/loader';
+@use '../layout/header';
+@use '../layout/footer';
+@use '../components/button';
+@use '../components/heart';
+@import '../utils/breakpoints';
+@import '../utils/drop-shadow';
 header {
     @include drop-shadow(3px, 3px);
 }

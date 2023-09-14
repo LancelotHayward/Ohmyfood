@@ -1,13 +1,13 @@
-@use 'abstracts/colors';
-@use 'abstracts/fonts';
-@use 'abstracts/reset';
-@use 'layout/header';
-@use 'layout/footer';
-@use 'components/button';
-@use 'components/heart';
-@use 'components/menu-item';
-@import 'utils/drop-shadow';
-@import 'utils/breakpoints';
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+@use '../abstracts/reset';
+@use '../layout/header';
+@use '../layout/footer';
+@use '../components/button';
+@use '../components/heart';
+@use '../components/menu-item';
+@import '../utils/drop-shadow';
+@import '../utils/breakpoints';
 body > img {
     position: relative;
     z-index: -1;
