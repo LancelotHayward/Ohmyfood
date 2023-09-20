@@ -47,7 +47,7 @@ footer nav {
 footer a {
   color: white;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1424px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -72,7 +72,6 @@ footer a {
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
   border-radius: 40px;
   display: inline-block;
-  font-weight: bold;
   color: white;
   padding: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -211,6 +210,7 @@ footer a {
 }
 
 .heart .fa-heart {
+  margin-right: 25px;
   line-height: unset;
   -webkit-background-clip: text;
           background-clip: text;
@@ -416,22 +416,29 @@ footer a {
 body > img {
   position: relative;
   z-index: -1;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-bottom: -30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  width: 100%;
+  margin-bottom: -50px;
+}
+@media only screen and (min-width: 1424px) {
+  body > img {
+    -o-object-position: 0 -450px;
+       object-position: 0 -450px;
+  }
 }
 
 main {
-  border-radius: 30px 30px 0 0;
+  border-radius: 50px 50px 0 0;
   overflow: auto;
   padding: 0 20px;
   background-color: #f6f6f6;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1424px) {
   main {
-    margin: 0 10vw;
-    padding: 0 10vw;
+    margin: 0 15vw;
+    padding: 0 15vw;
   }
 }
 
@@ -460,11 +467,21 @@ section:not(#title) {
 #title .heart {
   margin-right: 15px;
 }
+@media only screen and (min-width: 1424px) {
+  #title {
+    justify-content: center;
+    gap: 25px;
+  }
+}
 
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 30pt;
-  margin-right: auto;
+}
+@media only screen and (max-width: 1423px) {
+  h1 {
+    margin-right: auto;
+  }
 }
 
 h2 {
@@ -474,6 +491,6 @@ h2 {
   justify-content: space-between;
 }
 h2 span {
-  border-bottom: 3px solid var(--tertiary);
+  border-bottom: 4px solid #99E2D0;
   padding-bottom: 5px;
 }/*# sourceMappingURL=restaurant.css.map */

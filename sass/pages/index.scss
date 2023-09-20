@@ -12,8 +12,8 @@ header {
     @include drop-shadow(3px, 3px);
 }
 main > *{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 9vw;
+    padding-right: 9vw;
 }
 #address {
     display: flex;
@@ -103,12 +103,13 @@ main > *{
     @include desktop-breakpoint {
         & > div {
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .restaurant {
-            min-width: 40vw;
-            width: 40vw;
+            min-width: 35vw;
+            width: 35vw;
         }
     }
 }

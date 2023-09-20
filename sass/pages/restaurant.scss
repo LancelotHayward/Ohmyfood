@@ -8,21 +8,27 @@
 @use '../components/menu-item';
 @import '../utils/drop-shadow';
 @import '../utils/breakpoints';
+$border-radius: 50px;
 body > img {
     position: relative;
     z-index: -1;
-    max-width: 100%;
-    object-fit: contain;
-    margin-bottom: -30px; // Needs to be the same as border radius of main
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    margin-bottom: -$border-radius;
+    @include desktop-breakpoint {
+        object-position: 0 -450px;
+    }
 }
 main {
-    border-radius: 30px 30px 0 0;
+    border-radius: $border-radius $border-radius 0 0;
     overflow: auto;
     padding: 0 20px;
     background-color: colors.$light-gray;
     @include desktop-breakpoint {
-        margin: 0 10vw;
-        padding: 0 10vw;
+        $margin_radius: 15vw;
+        margin: 0 $margin_radius;
+        padding: 0 $margin_radius;
     }
 }
 #order {
@@ -47,11 +53,17 @@ section {
     .heart {
         margin-right: 15px;
     }
+    @include desktop-breakpoint {
+        justify-content: center;
+        gap: 25px;
+    }
 }
 h1 {
     font-family: 'Shrikhand', sans-serif;
     font-size: 30pt;
-    margin-right: auto
+    @include mobile-breakpoint {
+        margin-right: auto;
+    }
 }
 h2 {
     margin: unset;
@@ -59,7 +71,7 @@ h2 {
     display: inline-block;
     justify-content: space-between;
     span {
-        border-bottom: 3px solid var(--tertiary);
+        border-bottom: 4px solid colors.$tertiary;
         padding-bottom: 5px;
     }
 }

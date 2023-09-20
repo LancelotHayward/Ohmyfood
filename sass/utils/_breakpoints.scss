@@ -1,5 +1,11 @@
-@mixin desktop-breakpoint {
-    @media only screen and (min-width: 1000px){
+$desktop_breakpoint: 1424px;
+@mixin desktop-breakpoint ($desktop_breakpoint: $desktop_breakpoint) {
+    @media only screen and (min-width: $desktop_breakpoint){
+        @content
+   }
+}
+@mixin mobile-breakpoint ($desktop_breakpoint: $desktop_breakpoint) {
+    @media only screen and (max-width: ($desktop_breakpoint - 1)){
         @content
    }
 }
