@@ -392,7 +392,7 @@ footer a {
 .menu-item .fa-circle-check {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -25px;
   padding: 45px 25px;
   color: white;
   background-color: #99E2D0;
@@ -403,7 +403,7 @@ footer a {
 }
 .menu-item:hover .fa-circle-check, .menu-item:hover data {
   transition: all 400ms;
-  transform: translateX(0);
+  transform: translateX(-25px);
 }
 .menu-item:hover data {
   transition: all 400ms;
