@@ -26,6 +26,7 @@
     data {
         font-weight: bold;
         margin-right: 10px;
+        transition: all 400ms;
     }
     .fa-circle-check {
         position: absolute;
@@ -38,6 +39,7 @@
     &:not(&:hover) {
         .fa-circle-check {
             @extend .hidden;
+            transition: all 400ms;
             transform:translateX(60px)
         }
     }
@@ -47,6 +49,7 @@
             transform:translateX(0);
         }
         data {
+            transition: all 400ms;
             transform:translateX(-65px);
         }
         h3, p {

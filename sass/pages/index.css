@@ -149,6 +149,19 @@ a {
     visibility: hidden;
   }
 }
+@keyframes stop-scrolling {
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+body {
+  overflow: hidden;
+  animation: stop-scrolling 3s both;
+}
+
 #loader {
   background-color: #eaeaea;
   display: flex;
@@ -162,12 +175,7 @@ a {
   right: 0;
   bottom: 0;
   z-index: 9;
-  animation: remove-loader 0s both;
-}
-#loader div {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  animation: remove-loader 3s both;
 }
 #loader .fa-solid {
   display: inline-block;
@@ -248,7 +256,7 @@ footer nav {
 footer a {
   color: white;
 }
-@media only screen and (min-width: 1424px) {
+@media only screen and (min-width: 1279px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -477,7 +485,7 @@ main > * {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width: 1424px) {
+@media only screen and (min-width: 1279px) {
   #tutorial > div {
     flex-direction: row;
     gap: 2vw;
@@ -538,7 +546,7 @@ main > * {
   align-items: center;
   gap: 15px;
 }
-@media only screen and (min-width: 1424px) {
+@media only screen and (min-width: 1279px) {
   #restaurants > div {
     flex-direction: row;
     justify-content: space-between;
