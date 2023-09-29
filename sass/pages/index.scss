@@ -63,6 +63,7 @@ main > *{
     align-items: center;
     width: 100%;
     background-color: colors.$light-gray;
+    cursor: pointer;
     @include drop-shadow;
     i {
         margin-left: 50px;
@@ -105,7 +106,8 @@ main > *{
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 3vw;
+            max-width: 76vw;
         }
         .restaurant {
             min-width: 35vw;

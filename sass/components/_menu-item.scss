@@ -2,14 +2,25 @@
 @import '../utils/drop-shadow';
 @import '../utils/hidden';
 @import '../utils/fade-in';
+@import '../utils/breakpoints';
 .menu-item {
     @extend .faded-in;
     @include drop-shadow;
     background-color: white;
     padding: 15px 20px;
     border-radius: 20px;
-    font-size: 16pt;
     overflow: hidden;
+    cursor: pointer;
+    font-size: 16pt;
+    @include desktop-breakpoint  {
+        font-size: 13pt;
+        h3 {
+            font-size: 14pt;
+        }
+        p {
+            font-size: 12pt;
+        }
+    }
     div {
         display: flex;
         justify-content: space-between;
@@ -40,7 +51,7 @@
         .fa-circle-check {
             @extend .hidden;
             transition: all 400ms;
-            transform:translateX(60px)
+            transform:translateX(60px);
         }
     }
     &:hover {

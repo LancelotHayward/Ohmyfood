@@ -1,4 +1,5 @@
 @use '../utils/hidden';
+@import '../utils/breakpoints';
 header {
     display: flex;
     justify-content: space-between;
@@ -7,5 +8,8 @@ header {
     background-color: white;
     img {
         max-width: 50vw;
+        @include desktop-breakpoint {
+            max-width: 10vw;
+        }
     }
 }
