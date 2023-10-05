@@ -4,6 +4,7 @@
 @import '../utils/fade-in';
 @import '../utils/breakpoints';
 .menu-item {
+    @include fade-in;
     @extend .faded-in;
     @include drop-shadow;
     background-color: white;
